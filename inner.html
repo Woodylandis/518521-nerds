@@ -31,153 +31,134 @@
   </header>
   <main>
     <div class="top-main">
-        <h2>Магазин готовых шаблонов</h2>
+        <h1>Магазин готовых шаблонов</h1>
     </div>
     <div class="left-side">
-      <section class="price-scale">
-        <ul class="price-cost">
-          <li class="price">
-            <h3>СТОИМОСТЬ:</h3>
-          </li>
-        </ul>
-        <div class="scale">
-        </div>
-        <ul>
-          <li class="from-until">
-              <p>ОТ</p>
-            </li>
-            <li class="from-until">
-              <p>ДО</p>
-            </li>
-          </ul>
-      </section>
-      <section class="all-about-nets">
-        <ul class="all-nets">
-          <li class="net">
-            <h3>СЕТКА:</h3>
-          </li>
-          <li class="adaptaition-net">
-            <p>Адаптивная</p>
-          </li>
-          <li class="fixed-net">
-            <p>Фиксированная</p>
-          </li>
-          <li class="rubber-net">
-            <p>Резиновая</p>
-          </li>
-        </ul>
-      </section>
-      <section class="all-about-features">
-        <ul class="all-features">
-          <li class="features">
-            <h3>ОСОБЕННОСТИ:</h3>
-          </li>
-          <li class="slaider">
-            <p>Слайдер</p>
-          </li>
-          <li>
-            <p>Блок преимуществ</p>
-          </li>
-          <li>
-            <p>Новости</p>
-          </li>
-          <li>
-            <p>Галерея</p>
-          </li>
-          <li>
-            <p>Корзина</p>
-          </li>
-        </ul>
-      </section>
-      <section class="bottom-button-show">
-        <a class="button-show" href="x.html">ПОКАЗАТЬ</a>
-      </section>
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <form class="filters" action="inner.html" method="post">
+      <div class="scale">
+        <h3>СТОИМОСТЬ:</h3>
+        <input type="range" min="0" max="15000" step="5">
+        <p>ОТ</p>
+        <p>ДО</p>
+      </div>
+      <div class="nets">
+        <h3>СЕТКА:</h3>
+        <label>
+         <input type="radio" name="question-one" value="Адаптивная">
+                    Адаптивная
+        </label>
+        <br>
+        <label>
+        <input type="radio" name="question-one" value="Фиксированная">
+                    Фиксированная
+        </label>
+        <label>
+        <input type="radio" name="question-one" value="Резиновая">
+                    Резиновая
+        </label>
+      </div>
+      <div class="features">
+        <h3>ОСОБЕННОСТИ:</h3>
+        <label>
+         <input type="radio" name="question-one" value="Слайдер">
+                    Слайдер
+        </label>
+        <br>
+        <label>
+        <input type="radio" name="question-one" value="Блок преимуществ">
+                    Блок преимуществ
+        </label>
+        <label>
+        <input type="radio" name="question-one" value="Новости">
+                    Новости
+        </label>
+        <label>
+        <input type="radio" name="question-one" value="Галерея">
+                    Галерея
+        </label>
+        <label>
+        <input type="radio" name="question-one" value="Корзина">
+                    Корзина
+        </label>
+        <input type="submit" value="Показать">
+      </div>
+      </form>
     </div>
     <div class="right-side">
-      <section class="all-about-sorting">
-        <ul class="all-sorting">
-          <li class="sorting">
-            <h3>СОРТИРОВАТЬ:</h3>
-          </li>
-        </ul>
-      </section>
-      <section class="about-cost-type-name">
-        <ul class="cost-type-name">
-          <li class="cost">
-            <p>ПО ЦЕНЕ</p>
-          </li>
-          <li class="type">
-            <p>ПО ТИПУ</p>
-          </li>
-          <li class="name">
-            <p>ПО НАЗВАНИЮ</p>
-          </li>
-        </ul>
-      </section>
-      <section class="all-sites-in-table">
-        <table class="sites-in-table">
-          <tr class="sedona-pink">
-            <td class="sedona">
-              <img src="sedona.svg" alt="Сайт Седона">
-            </td>
-            <td class="pink">
-              <img src="pink.svg" alt="Сайт Пинк">
-            </td>
-          </tr>
-          <tr class="borodinski-mishka">
-            <td class="borodinski">
-              <img src="borodinski.svg" alt="Сайт Бородинский">
-            </td>
-            <td class="mishka">
-              <img src="mishka.svg" alt="Сайт Мишка">
-            </td>
-          </tr>
-          <tr class="education-kvast">
-            <td class="education">
-              <img src="education.svg" alt="Сайт Учеба">
-            </td>
-            <td class="kvast">
-              <img src="kvast.svg" alt="Сайт Кваст">
-            </td>
-          </tr>
-        </table>
-      </section>
-      <section class="all-sequences">
+      <h3>СОРТИРОВАТЬ:</h3>
+      <ul class="cost-type-name">
+        <li class="cost">
+          <p>ПО ЦЕНЕ</p>
+        </li>
+        <li class="type">
+          <p>ПО ТИПУ</p>
+        </li>
+        <li class="name">
+          <p>ПО НАЗВАНИЮ</p>
+        </li>
+        <li class="up">
+          <img src="http://via.placeholder.com/15x15" alt="Кнопка вверх">
+        </li>
+        <li class="down">
+          <img src="http://via.placeholder.com/15x15" alt="Кнопка вниз">
+        </li>
+      </ul>
+
+          <img src="sedona.svg" alt="Сайт Седона">
+
+          <img src="pink.svg" alt="Сайт Пинк">
+
+          <img src="borodinski.svg" alt="Сайт Бородинский">
+
+          <img src="mishka.svg" alt="Сайт Мишка">
+
+          <img src="education.svg" alt="Сайт Учеба">
+
+          <img src="kvast.svg" alt="Сайт Кваст">
+
         <ul class="sequences">
-          <li class="1st">
+          <li class="first">
             <p>1</p>
           </li>
-          <li class="2nd">
+          <li class="second">
             <p>2</p>
           </li>
-          <li class="3rd">
+          <li class="third">
             <p>3</p>
           </li>
           <li class="next">
             <p>Следующая</p>
           </li>
         </ul>
-      </section>
     </div>
   </main>
   <footer class="main-footer">
+    <section class="dislocation">
+      <img src="http://via.placeholder.com/700x350" alt="Наш адрес">
+    </section>
+    <section class="contacts">
+            <p>
+              <strong>NЁRDS DESIGN STUDIO</strong>
+            </p>
+            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. +7 (812) 275-75-75</p>
+          <a href="order-site.html">Напишите нам</a>
+      </section>
     <section class="social-nets">
-      <img src="vk.com" alt="Мы Вконтакте">
-      <img src="facebook.com" alt="Мы в Facebook">
-      <img src="instagram.com" alt="Мы в Instagram">
+      <a href="#"><img src="http://via.placeholder.com/35x35" alt="Мы Вконтакте">
+      </a>
+      <a href="#"><img src="http://via.placeholder.com/35x35" alt="Мы в Facebook">
+      </a>
+      <a href="#"><img src="http://via.placeholder.com/35x35" alt="Мы в Instagram">
+      </a>
     </section>
     <section class="preposition-information">
-      <ul class="preposition-deal">
-        <li class="preposition-data">
           <p>
-            <b>Давайте дружить, это выгодно!</b>
+            <strong>Давайте дружить, это выгодно!</strong>
           </p>
-        </li>
-        <li class="preposition-data">
           <p>Скидка 10% для друзей из социальных сетей.</p>
-        </li>
-      </ul>
     </section>
   </footer>
-</body>
-</html>
+  </body>
+  </html>
