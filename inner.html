@@ -1,122 +1,118 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Нёрдс</title>
-</head>
-<body>
-  <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="img.svg" width="100" height="100" alt="Логотип Нёрдс">
-      </a>
-      <ul class="site-navigation">
-        <li>
-          <a href="studio.html">Студия</a>
-        </li>
-        <li>
-          <a href="clients.html">Клиенты</a>
-        </li>
-        <li>
-          <a href="shop.html">Магазин</a>
-        </li>
-        <li>
-          <a href="contacts.html">Контакты</a>
-        </li>
-      </ul>
-      <ul class="basket-for-user">
-        <li class="basket">Корзина</li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="top-main">
-        <h1>Магазин готовых шаблонов</h1>
-    </div>
-    <div class="left-side">
-      <h2 class="visually-hidden">Фильтр товаров</h2>
-      <form class="filters" action="inner.html" method="post">
-      <div class="scale">
-        <h3>СТОИМОСТЬ:</h3>
-        <input type="range" min="0" max="15000" step="5">
-        <p>ОТ</p>
-        <p>ДО</p>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a href="index.html" class="main-header-logo">
+          <img src="img/nerds-logo.svg" alt="Логотип Нёрдс">
+        </a>
+        <ul class="site-navigation">
+          <li>
+            <a href="#.html">Студия</a>
+          </li>
+          <li>
+            <a href="#.html">Клиенты</a>
+          </li>
+          <li>
+            <a href="#.html">Магазин</a>
+          </li>
+          <li>
+            <a href="#.html">Контакты</a>
+          </li>
+        </ul>
+        <ul class="basket-for-user">
+          <img src="img/cart-icon.svg" alt="Basket">
+          <li class="basket">Корзина</li>
+        </ul>
+      </nav>
+      <h1>Магазин готовых шаблонов</h1>
+    </header>
+    <main>
+      <div class="sidebar">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="filters" action="inner.html" method="post">
+          <div class="scale">
+            <h3>СТОИМОСТЬ:</h3>
+            <input type="range" min="0" max="15000" step="5">
+            <p>ОТ</p>
+            <p>ДО</p>
+          </div>
+          <div class="nets">
+            <h3>СЕТКА:</h3>
+            <label>
+             <input type="radio" name="question-one" value="Адаптивная">
+              Адаптивная
+            </label>
+            <br>
+            <label>
+            <input type="radio" name="question-one" value="Фиксированная">
+              Фиксированная
+            </label>
+            <br>
+            <label>
+            <input type="radio" name="question-one" value="Резиновая">
+              Резиновая
+            </label>
+          </div>
+          <div class="features">
+            <h3>ОСОБЕННОСТИ:</h3>
+            <label>
+             <input type="checkbox" name="slaider" value="Слайдер">
+              Слайдер
+            </label>
+            <br>
+            <label>
+            <input type="checkbox" name="block-of-advantage" value="Блок преимуществ">
+              Блок преимуществ
+            </label>
+            <br>
+            <label>
+            <input type="checkbox" name="news" value="Новости">
+              Новости
+            </label>
+            <br>
+            <label>
+            <input type="checkbox" name="galery" value="Галерея">
+              Галерея
+            </label>
+            <br>
+            <label>
+            <input type="checkbox" name="basket" value="Корзина">
+              Корзина
+            </label>
+            <button type="submit" value="Показать">
+          </div>
+        </form>
       </div>
-      <div class="nets">
-        <h3>СЕТКА:</h3>
-        <label>
-         <input type="radio" name="question-one" value="Адаптивная">
-                    Адаптивная
-        </label>
-        <br>
-        <label>
-        <input type="radio" name="question-one" value="Фиксированная">
-                    Фиксированная
-        </label>
-        <label>
-        <input type="radio" name="question-one" value="Резиновая">
-                    Резиновая
-        </label>
-      </div>
-      <div class="features">
-        <h3>ОСОБЕННОСТИ:</h3>
-        <label>
-         <input type="radio" name="question-one" value="Слайдер">
-                    Слайдер
-        </label>
-        <br>
-        <label>
-        <input type="radio" name="question-one" value="Блок преимуществ">
-                    Блок преимуществ
-        </label>
-        <label>
-        <input type="radio" name="question-one" value="Новости">
-                    Новости
-        </label>
-        <label>
-        <input type="radio" name="question-one" value="Галерея">
-                    Галерея
-        </label>
-        <label>
-        <input type="radio" name="question-one" value="Корзина">
-                    Корзина
-        </label>
-        <input type="submit" value="Показать">
-      </div>
-      </form>
-    </div>
-    <div class="right-side">
-      <h3>СОРТИРОВАТЬ:</h3>
-      <ul class="cost-type-name">
-        <li class="cost">
-          <p>ПО ЦЕНЕ</p>
-        </li>
-        <li class="type">
-          <p>ПО ТИПУ</p>
-        </li>
-        <li class="name">
-          <p>ПО НАЗВАНИЮ</p>
-        </li>
-        <li class="up">
-          <img src="http://via.placeholder.com/15x15" alt="Кнопка вверх">
-        </li>
-        <li class="down">
-          <img src="http://via.placeholder.com/15x15" alt="Кнопка вниз">
-        </li>
-      </ul>
-
-          <img src="sedona.svg" alt="Сайт Седона">
-
-          <img src="pink.svg" alt="Сайт Пинк">
-
-          <img src="borodinski.svg" alt="Сайт Бородинский">
-
-          <img src="mishka.svg" alt="Сайт Мишка">
-
-          <img src="education.svg" alt="Сайт Учеба">
-
-          <img src="kvast.svg" alt="Сайт Кваст">
-
+      <div class="right-side">
+        <h3>СОРТИРОВАТЬ:</h3>
+        <ul class="cost-type-name">
+          <li class="cost">
+            <p>ПО ЦЕНЕ</p>
+          </li>
+          <li class="type">
+            <p>ПО ТИПУ</p>
+          </li>
+          <li class="name">
+            <p>ПО НАЗВАНИЮ</p>
+          </li>
+          <li class="up">
+            <img src="img/icon-up-dir.svg" alt="Кнопка вверх">
+          </li>
+          <li class="down">
+            <img src="img/icon-down-dir.svg" alt="Кнопка вниз">
+          </li>
+        </ul>
+          <img src="img/img-sedona.jpg" alt="Сайт Седона">
+          <img src="img/img-pink.jpg" alt="Сайт Пинк">
+          <img src="img/img-barbershop.jpg" alt="Сайт Бородинский">
+          <img src="img/img-mishka.jpg" alt="Сайт Мишка">
+          <img src="img/img-aplus.jpg" alt="Сайт Учеба">
+          <img src="img/img-kvast.jpg" alt="Сайт Кваст">
         <ul class="sequences">
           <li class="first">
             <p>1</p>
@@ -131,34 +127,35 @@
             <p>Следующая</p>
           </li>
         </ul>
-    </div>
-  </main>
-  <footer class="main-footer">
-    <section class="dislocation">
-      <img src="http://via.placeholder.com/700x350" alt="Наш адрес">
-    </section>
-    <section class="contacts">
-            <p>
-              <strong>NЁRDS DESIGN STUDIO</strong>
-            </p>
-            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            <p>тел. +7 (812) 275-75-75</p>
-          <a href="order-site.html">Напишите нам</a>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <section class="dislocation">
+        <img src="img/map.png" alt="Наш адрес">
+        <img src="img/map-marker.png" alt="Мы здесь!">
       </section>
-    <section class="social-nets">
-      <a href="#"><img src="http://via.placeholder.com/35x35" alt="Мы Вконтакте">
-      </a>
-      <a href="#"><img src="http://via.placeholder.com/35x35" alt="Мы в Facebook">
-      </a>
-      <a href="#"><img src="http://via.placeholder.com/35x35" alt="Мы в Instagram">
-      </a>
-    </section>
-    <section class="preposition-information">
-          <p>
-            <strong>Давайте дружить, это выгодно!</strong>
-          </p>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-    </section>
-  </footer>
+      <section class="contacts">
+        <p>
+          <strong>NЁRDS DESIGN STUDIO</strong>
+        </p>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a href="order-site.html">Напишите нам</a>
+      </section>
+      <section class="social-nets">
+        <a href="#" class="vk"><img src="img/vk-icon.svg" alt="Мы Вконтакте">
+        </a>
+        <a href="#" class="fb"><img src="img/fb-icon.svg" alt="Мы в Facebook">
+        </a>
+        <a href="#" class="insta"><img src="img/insta-icon.svg" alt="Мы в Instagram">
+        </a>
+      </section>
+      <section class="preposition-information">
+        <p>
+          <strong>Давайте дружить, это выгодно!</strong>
+        </p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </footer>
   </body>
-  </html>
+</html>
