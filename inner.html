@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -12,7 +15,7 @@
         </a>
         <ul class="site-navigation">
           <li>
-            <a href="#.html">Студия</a>
+            <a href="index.html">Студия</a>
           </li>
           <li>
             <a href="#.html">Клиенты</a>
@@ -47,12 +50,10 @@
              <input type="radio" name="question-one" value="Адаптивная">
               Адаптивная
             </label>
-            <br>
             <label>
             <input type="radio" name="question-one" value="Фиксированная">
               Фиксированная
             </label>
-            <br>
             <label>
             <input type="radio" name="question-one" value="Резиновая">
               Резиновая
@@ -64,28 +65,24 @@
              <input type="checkbox" name="slaider" value="Слайдер">
               Слайдер
             </label>
-            <br>
             <label>
             <input type="checkbox" name="block-of-advantage" value="Блок преимуществ">
               Блок преимуществ
             </label>
-            <br>
             <label>
             <input type="checkbox" name="news" value="Новости">
               Новости
             </label>
-            <br>
             <label>
             <input type="checkbox" name="galery" value="Галерея">
               Галерея
             </label>
-            <br>
             <label>
             <input type="checkbox" name="basket" value="Корзина">
               Корзина
             </label>
-            <button type="submit" value="Показать">
           </div>
+          <button class="send" type="submit" value="Показать">Показать</button>
         </form>
       </div>
       <div class="right-side">
@@ -132,7 +129,6 @@
     <footer class="main-footer">
       <section class="dislocation">
         <img src="img/map.png" alt="Наш адрес">
-        <img src="img/map-marker.png" alt="Мы здесь!">
       </section>
       <section class="contacts">
         <p>

@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+
+header {
+  background-color: #eeeeee;
+}
+
+h1 {
+
+  font-size: 55px;
+  line-height: 55px;
+
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.site-navigation,
+.basket-for-user {
+  list-style: none;
+}
+
+.site-navigation a:hover,
+.basket-for-user a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:focus,
+.basket-for-user a:focus {
+  color: #a6a6a6;
+}
+
+.site-navigation a:active,
+.basket-for-user a:active {
+  text-decoration: underline;
+  text-decoration-color: #fb565a;
+}
+
+.features .luxury {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.features .math-design {
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+}
+
+a.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+
+.services h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.services p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+}
+
+section.services a {
+  font-size: 16px;
+  line-height: 18px;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+
+.honor-group strong {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.honor-group p,
+.honor-group li {
+  font-size: 16px;
+  line-height: 24px;
+
+  list-style: none;
+
+  color: #283136;
+}
+
+.honor-group h3 {
+  font-size: 16px;
+  line-height: 24px;
+
+  text-transform: uppercase;
+}
+
+.level-of-quality strong {
+  font-size: 16px;
+  line-height: 24px;
+
+  text-transform: uppercase;
+}
+
+.percents p {
+  font-size: 45px;
+  line-height: 10,06px;
+}
+
+.row-decription p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.contacts strong {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.contacts a {
+  font-size: 16px;
+  line-height: 18px;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+
+.preposition-information strong {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.preposition-information p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.sidebar h3 {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+form label {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+form button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #eeeeee;
+  border: none;
+}
+
+.right-side h3 {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.right-side ul {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+ul.sequences {
+    font-size: 16px;
+    line-height: 18px;
+    list-style: none;
+    text-transform: uppercase;
+}
