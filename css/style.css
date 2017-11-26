@@ -256,7 +256,6 @@ form button {
   border: none;
 }
 
-
 .page-number a {
     font-size: 16px;
     line-height: 18px;
@@ -266,4 +265,212 @@ form button {
 
 .contacts strong {
   color: #000000;
+}
+
+/*flexbox*/
+
+html,
+body {
+  min-width: 1200px;
+  min-height: 2476px;
+}
+
+.main-header {
+  margin-bottom: 80px;
+
+}
+
+.main-navigation {
+  display: flex;
+  align-items: center;
+
+
+}
+
+.main-navigation-wrapper{
+  width: auto;
+
+  margin-bottom: 25px;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.main-header-logo {
+  margin: 0;
+  padding: 0;
+
+  width: 160px;
+  height: 65px;
+
+}
+
+.site-navigation {
+  width: 510px;
+
+  margin-left: 140px;
+  margin-right: 140px;
+
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.basket-for-user {
+  margin-left: auto;
+
+  width: 160px;
+  height: 20px;
+}
+
+.bright-possibilities {
+  width: auto;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0 20px;
+  margin-bottom: 80px;
+}
+
+.features {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 381px;
+  height: 275px;
+
+}
+
+.luxury {
+  width: 381px;
+  min-height: 135px;
+
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.math-design {
+  margin-top: auto;
+  width: 360px;
+  height: 50px;
+}
+
+.features .button {
+  width: 240px;
+  min-height: 50px;
+  vertical-align: middle;
+
+}
+
+.slaider {
+  margin-right: auto;
+  margin-left: 51px;
+  height: 413px;
+}
+
+.services-wrapper {
+  width: auto;
+
+  margin-bottom: 82px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 20px;
+  margin-right: auto;
+
+  width: 1100px;
+}
+
+.web-services {
+  display: flex;
+  flex-direction: column;
+
+  width: 300px;
+}
+
+.web-services h3 {
+  min-width: 180px;
+}
+
+.web-services p {
+  width: 260px;
+  min-height: 40px;
+}
+
+.web-services a {
+  min-width: 160px;
+  height: 50px;
+}
+
+.description-wrapper {
+  width: auto;
+
+  margin-bottom: 83px;
+  padding-top: 42px;
+
+  background-color: rgba(11, 111, 11, 0.4);
+}
+
+.description-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 1200px;
+
+  padding-left: 20px;
+  padding-right: auto;
+}
+
+.honor-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 375px;
+
+
+  background-color: rgba(222, 1, 1, 0.4);
+}
+
+.honor-group strong {
+  width: 660px;
+  min-height: 100px;
+  background-color: rgba(111, 1, 11, 0.4);
+}
+
+.honor-group p {
+  width: 660px;
+  min-height: 45px;
+  background-color: rgba(7, 17, 171, 0.4);
+}
+
+.honor-group h3 {
+  width: 360px;
+  min-height: 20px;
+  background-color: rgba(71, 17, 11, 0.4);
+}
+
+.make-orders {
+  width: 460px;
+  min-height: 20xp;
+}
+
+.level-of-quality {
+  display: flex;
+  flex-direction: column;
+
+  padding-right: 20px;
+  width: 360px;
 }
