@@ -11,30 +11,28 @@
     <header class="main-header">
       <nav class="main-navigation">
         <div class="main-navigation-wrapper">
-          <div class="container">
-            <a href="index.html" class="main-header-logo">
-              <img src="img/nerds-logo.svg" alt="Логотип Нёрдс">
-            </a>
-            <ul class="site-navigation">
-              <li>
-                <a href="index.html">Студия</a>
-              </li>
-              <li>
-                <a href="#">Клиенты</a>
-              </li>
-              <li>
-                <a href="inner.html">Магазин</a>
-              </li>
-              <li>
-                <a href="#">Контакты</a>
-              </li>
-            </ul>
-            <ul class="basket-for-user">
-              <li>
-                <a href="#.html">Корзина</a>
-              </li>
-            </ul>
-          </div>
+          <a href="index.html" class="main-header-logo">
+            <img src="img/nerds-logo.svg" alt="Логотип Нёрдс">
+          </a>
+          <ul class="site-navigation">
+            <li>
+              <a href="index.html">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a href="inner.html">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="basket-for-user">
+            <li>
+              <a href="#.html">Корзина</a>
+            </li>
+          </ul>
         </div>
       </nav>
       <div class="caption">
@@ -163,10 +161,12 @@
             </div>
           </div>
           <div class="page-number">
-            <a class="first" href="#">1</a>
-            <a href="second">2</a>
-            <a href="third">3</a>
-            <a href="next">Следующая</a>
+            <div class="container">
+              <a class="first" href="#">1</a>
+              <a href="second">2</a>
+              <a href="third">3</a>
+              <a href="next">Следующая</a>
+            </div>
           </div>
         </div>
       </div>
@@ -200,12 +200,18 @@
       <h2>Напишите нам</h2>
       <button class="modal-close" type="button" title="Закрыть">Закрыть</button>
       <form class="login-entering" action="https://echo.htmlacademy.ru" method="post">
-        <label for="name">Ваше имя:</label>
-        <input class="input-name" id="name" type="text" name="name" placeholder="представьтесь, пожалуйста">
-        <label for="email">Ваш e-mail:</label>
-        <input class="input-email" id="email" type="text" name="email" placeholder="для отправки ответа">
-        <label class="post-letter" for="text-mail">Текст письма:</label>
-        <input class="input-post-letter" id="text-mail" type="text" name="text-mail" placeholder="в свободной форме">
+        <p class="appointment-item">
+          <label for="name">Ваше имя:</label>
+          <input class="input-name" id="name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+        </p>
+        <p class="appointment-item">
+          <label for="email">Ваш e-mail:</label>
+          <input class="input-email" id="email" type="text" name="email" placeholder="Для отправки ответа">
+        </p>
+        <p class="appointment-item">
+          <label class="post-letter" for="text-mail">Текст письма:</label>
+          <input class="input-post-letter" id="text-mail" type="text" name="text-mail" placeholder="В свободной форме">
+        </p>
         <button class="button" type="submit">Отправить</button>
       </form>
     </section>

@@ -11,30 +11,28 @@
     <header class="main-header">
       <nav class="main-navigation">
         <div class="main-navigation-wrapper">
-          <div class="container">
-            <a href="index.html" class="main-header-logo">
-              <img src="img/nerds-logo.svg" alt="Логотип Нёрдс">
-            </a>
-            <ul class="site-navigation">
-              <li>
-                <a href="index.html">Студия</a>
-              </li>
-              <li>
-                <a href="#">Клиенты</a>
-              </li>
-              <li>
-                <a href="inner.html">Магазин</a>
-              </li>
-              <li>
-                <a href="#">Контакты</a>
-              </li>
-            </ul>
-            <ul class="basket-for-user">
-              <li>
-                <a href="#.html">Корзина</a>
-              </li>
-            </ul>
-          </div>
+          <a href="index.html" class="main-header-logo">
+            <img src="img/nerds-logo.svg" alt="Логотип Нёрдс">
+          </a>
+          <ul class="site-navigation">
+            <li>
+              <a href="index.html">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a href="inner.html">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="basket-for-user">
+            <li>
+              <a href="#.html">Корзина</a>
+            </li>
+          </ul>
         </div>
       </nav>
       <div class="bright-possibilities">
@@ -54,26 +52,24 @@
     <main class="container">
       <h1 class="visually-hidden">"Дизайн-Студия Нёрдс"</h1>
       <div class="services-wrapper">
-        <section class="services">
-          <div class="web-services">
-            <img src="img/illustration-1.png" alt="notebook">
-            <h3>ВЕБ-САЙТЫ</h3>
-            <p>Мир никогда не станет прежним после того как увидит ваш сайт!</p>
-            <a href="order-site.html">ЗАКАЗАТЬ</a>
-          </div>
-          <div class="web-services">
-            <img src="img/illustration-2.png" alt="phones">
-            <h3>ПРИЛОЖЕНИЯ</h3>
-            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a href="order-app.html">ЗАКАЗАТЬ</a>
-          </div>
-          <div class="web-services">
-            <img src="img/illustration-3.png" alt="presentation">
-            <h3>ПРЕЗЕНТАЦИИ</h3>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a href="order-presentation.html">ЗАКАЗАТЬ</a>
-          </div>
-        </section>
+        <div class="web-services">
+          <img src="img/illustration-1.png" alt="notebook">
+          <h3>ВЕБ-САЙТЫ</h3>
+          <p>Мир никогда не станет прежним после того как увидит ваш сайт!</p>
+          <a href="order-site.html">ЗАКАЗАТЬ</a>
+        </div>
+        <div class="web-services">
+          <img src="img/illustration-2.png" alt="phones">
+          <h3>ПРИЛОЖЕНИЯ</h3>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a href="order-app.html">ЗАКАЗАТЬ</a>
+        </div>
+        <div class="web-services">
+          <img src="img/illustration-3.png" alt="presentation">
+          <h3>ПРЕЗЕНТАЦИИ</h3>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a href="order-presentation.html">ЗАКАЗАТЬ</a>
+        </div>
       </div>
       <div class="description-wrapper">
         <div class="container">
@@ -132,26 +128,26 @@
         </div>
       </div>
       <section class="sponsors">
-        <section class="htmlacademy-sponsor">
+        <div class="htmlacademy-sponsor">
           <a href="htmlacademy.ru">
             <img src="img/logo-1.png" alt="Логотип Htmlacademy">
           </a>
-        </section>
-        <section class="barbershop-sponsor">
+        </div>
+        <div class="barbershop-sponsor">
           <a href="barbershop.com">
             <img src="img/logo-2.png" alt="Логотип Barbershop">
           </a>
-        </section>
-        <section class="pink-sponsor">
+        </div>
+        <div class="pink-sponsor">
           <a href="pink.by">
             <img src="img/logo-3.png" alt="Логотип Pink">
           </a>
-        </section>
-        <section class="mishka-sponsor">
+        </div>
+        <div class="mishka-sponsor">
             <a href="mishka.org">
               <img src="img/logo-4.png" alt="Логотип Mishka">
             </a>
-        </section>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
@@ -183,12 +179,18 @@
       <h2>Напишите нам</h2>
       <button class="modal-close" type="button" title="Закрыть">Закрыть</button>
       <form class="login-entering" action="https://echo.htmlacademy.ru" method="post">
-        <label for="name">Ваше имя:</label>
-        <input class="input-name" id="name" type="text" name="name" placeholder="представьтесь, пожалуйста">
-        <label for="email">Ваш e-mail:</label>
-        <input class="input-email" id="email" type="text" name="email" placeholder="для отправки ответа">
-        <label class="post-letter" for="text-mail">Текст письма:</label>
-        <input class="input-post-letter" id="text-mail" type="text" name="text-mail" placeholder="в свободной форме">
+        <p class="appointment-item">
+          <label for="name">Ваше имя:</label>
+          <input class="input-name" id="name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+        </p>
+        <p class="appointment-item">
+          <label for="email">Ваш e-mail:</label>
+          <input class="input-email" id="email" type="text" name="email" placeholder="Для отправки ответа">
+        </p>
+        <p class="appointment-item">
+          <label class="post-letter" for="text-mail">Текст письма:</label>
+          <input class="input-post-letter" id="text-mail" type="text" name="text-mail" placeholder="В свободной форме">
+        </p>
         <button class="button" type="submit">Отправить</button>
       </form>
     </section>

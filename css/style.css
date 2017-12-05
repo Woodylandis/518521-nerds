@@ -23,8 +23,22 @@ a {
   line-height: 55px;
 }
 
-.visually-hidden {
-  display: none;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main-navigation {
@@ -220,10 +234,10 @@ form button {
 }
 
 .our-template .site-price {
-   background-color: #eeeeee;
+  background-color: #eeeeee;
 
-   width: 360px;
-   min-height: 231px;
+  width: 360px;
+  min-height: 231px;
 }
 
 .our-template span {
@@ -257,14 +271,25 @@ form button {
 }
 
 .page-number a {
-    font-size: 16px;
-    line-height: 18px;
-    list-style: none;
-    text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  list-style: none;
+  text-transform: uppercase;
 }
 
 .contacts strong {
   color: #000000;
+}
+
+.modal-login h2 {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.login-entering label{
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
 }
 
 /*flexbox*/
@@ -284,11 +309,6 @@ body {
   display: flex;
   align-items: center;
 
-
-}
-
-.main-navigation-wrapper{
-
   width: 1160px;
 
   margin-left: auto;
@@ -296,13 +316,15 @@ body {
   margin-bottom: 25px;
 }
 
-.main-navigation-wrapper .container {
+.main-navigation-wrapper{
   display: flex;
   justify-content: space-between;
 
-  padding: 20px;
+  padding: 0 20px;
   padding-bottom: 0px;
+
 }
+
 
 .main-header-logo {
   margin: 0;
@@ -391,21 +413,19 @@ main .container {
 }
 
 .services-wrapper {
-
-  margin-bottom: 82px;
-}
-
-.services {
   display: flex;
   justify-content: space-between;
 
+  width: 1160px;
+
   padding: 0 20px;
   padding-right: 60px;
+
   margin-left: auto;
   margin-right: auto;
-
-  width: 1160px;
+  margin-bottom: 82px;
 }
+
 
 .web-services {
   display: flex;
@@ -501,13 +521,13 @@ main .container {
   width: auto;
 
   margin-top: 45px;
-  padding-top: 81px;
 }
 
 .dislocation {
   width: 1200px;
 
   margin: 0 auto;
+  padding-top: 81px;
 }
 
 .main-footer .container {
@@ -645,9 +665,136 @@ main .container {
   flex-direction: row;
   justify-content: space-between;
 
-  width: 460;
+}
+
+.page-number .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 444px;
   height: 50px;
 
-  margin-right: 17px;
-  padding-right: 317px;
+  margin-right: auto;
+}
+
+/*modal form*/
+
+.modal-login {
+  display: none;
+
+  width: 960px;
+  height: 590px;
+  box-shadow:
+  -5px -1px 10px -11px black,
+  5px 100px 250px 2px black;
+}
+
+.modal-login h2 {
+
+  margin: 0;
+  margin-left: 100px;
+  margin-bottom: 40px;
+
+  padding-top: 67px;
+}
+
+.login-entering {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 760px;
+  margin: 0 auto;
+
+  padding-bottom: 84px;
+}
+
+.appointment-item {
+  width: 360px;
+  margin: 0;
+  margin-bottom: 10px;
+
+}
+
+.appointment-item:nth-child(3) {
+  width: 100%;
+}
+
+.input-post-letter {
+  display: inline-block;
+  height: 118px;
+}
+
+.login-entering label{
+	display: block;
+	vertical-align: top;
+	width: 160px;
+}
+
+.appointment-item input {
+
+  box-sizing: border-box;
+  width: 100%;
+
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 14px;
+
+  font: inherit;
+
+  background-color: transparent;
+  border: 2px solid #d7dcde;
+  border-radius: 5px;
+}
+
+
+.login-entering .button {
+  display: block;
+  width: 260px;
+  height: 50px;
+  margin-top: 14px;
+  margin-right: 0;
+
+  color: #ffffff;
+  background-color: #fb565a;
+  border-radius: 3px;
+}
+
+.modal-close{
+	width: 41px;
+	height: 41px;
+	font-size: 0;
+	border: 0;
+	outline: 0;
+	padding: 0;
+	cursor: default;
+	background: #ffffff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2575px;
+	right: 1100px;
+}
+
+.modal-close::before,
+.modal-close::after{
+	position: absolute;
+	content: "";
+	width: 5px;
+	height: 27px;
+	background: #fb585c;
+	border-radius: 1px;
+	top: 7px;
+	left: 18px;
+}
+.modal-close::before{
+	transform: rotate(-45deg);
+}
+.modal-close::after{
+	transform: rotate(45deg);
 }
